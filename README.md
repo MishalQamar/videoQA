@@ -36,11 +36,18 @@ uv run streamlit run app.py
 
 ## ☁️ Deploy to Streamlit Cloud
 
-1. Push to GitHub: `git push origin main`
+### Quick Deploy
+
+1. Ensure repository is on GitHub: `https://github.com/MishalQamar/videoQA`
 2. Go to [share.streamlit.io](https://share.streamlit.io)
-3. Connect repository: `MishalQamar/videoQA`
-4. Main file: `app.py`
-5. (Optional) Add `OPENAI_API_KEY` in Secrets
+3. Sign in with GitHub
+4. Click "New app"
+5. Select repository: `MishalQamar/videoQA`
+6. Branch: `main`
+7. Main file: `app.py`
+8. Click "Deploy!"
+
+**Note**: If repository doesn't appear, ensure it's public or Streamlit Cloud has access. See `DEPLOYMENT.md` for troubleshooting.
 
 ## 🛠️ Tech Stack
 

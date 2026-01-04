@@ -2,32 +2,35 @@
 
 AI-powered YouTube video analysis and Q&A. Extract transcripts, generate summaries, and ask questions about video content.
 
+## What It Does
+
+- Analyzes YouTube videos or playlists
+- Generates AI summaries of video content
+- Answers questions about videos using AI
+- Displays video metadata and information
+
 ## Quick Start
 
 ```bash
 # Install
-uv sync  # or: pip install -e .
+uv sync
 
 # Run
 uv run streamlit run app.py
 ```
 
-1. Enter your [OpenAI API key](https://platform.openai.com/account/api-keys)
+## Usage
+
+1. Enter your OpenAI API key
 2. Paste a YouTube video or playlist URL
 3. Click "Process" to generate summary
 4. Ask questions about the video
 
-## Deploy to Streamlit Cloud
+## Deploy
 
-1. Push to GitHub: `git push origin main`
-2. Go to [share.streamlit.io](https://share.streamlit.io)
-3. Connect repo: `MishalQamar/youtubeGPT`
-4. Main file: `app.py`
-
-## Tech Stack
-
-- Streamlit, LangChain, OpenAI GPT-4o-mini
-- RAG for intelligent Q&A
+Push to GitHub and deploy on Streamlit Cloud:
+- Repository: MishalQamar/youtubeGPT
+- Main file: app.py
 
 ## Requirements
 
@@ -37,4 +40,4 @@ uv run streamlit run app.py
 
 ---
 
-**Built with ❤️ using LangChain, Streamlit, and OpenAI**
+Built with Streamlit, LangChain, and OpenAI

@@ -1,100 +1,39 @@
 # videoQA 📹
 
-AI-powered YouTube video analysis and Q&A system. Extract transcripts, generate summaries, and ask questions about video content using RAG (Retrieval Augmented Generation).
+AI-powered YouTube video analysis and Q&A. Extract transcripts, generate summaries, and ask questions about video content.
 
-## ✨ Features
-
-- Analyze single videos or entire playlists
-- AI-generated summaries using OpenAI GPT
-- Interactive Q&A about video content
-- Rich video metadata display
-
-## 🚀 Quick Start
-
-### Installation
+## Quick Start
 
 ```bash
-# Clone and install dependencies
-git clone https://github.com/MishalQamar/videoQA.git
-cd videoQA
+# Install
 uv sync  # or: pip install -e .
-```
 
-### Run Locally
-
-```bash
+# Run
 uv run streamlit run app.py
-# or: streamlit run app.py
 ```
 
-### Usage
-
-1. Enter your [OpenAI API key](https://platform.openai.com/account/api-keys) in the sidebar
+1. Enter your [OpenAI API key](https://platform.openai.com/account/api-keys)
 2. Paste a YouTube video or playlist URL
-3. Click "Process" to generate summary and enable Q&A
-4. Ask questions about the video content
+3. Click "Process" to generate summary
+4. Ask questions about the video
 
-## ☁️ Deploy to Streamlit Cloud
+## Deploy to Streamlit Cloud
 
-### Quick Deploy
-
-1. Ensure repository is on GitHub: `https://github.com/MishalQamar/videoQA`
+1. Push to GitHub: `git push origin main`
 2. Go to [share.streamlit.io](https://share.streamlit.io)
-3. Sign in with GitHub
-4. Click "New app"
-5. Select repository: `MishalQamar/videoQA`
-6. Branch: `main`
-7. Main file: `app.py`
-8. Click "Deploy!"
+3. Connect repo: `MishalQamar/youtubeGPT`
+4. Main file: `app.py`
 
-**Note**: If repository doesn't appear, ensure it's public or Streamlit Cloud has access. See `DEPLOYMENT.md` for troubleshooting.
+## Tech Stack
 
-## 🛠️ Tech Stack
+- Streamlit, LangChain, OpenAI GPT-4o-mini
+- RAG for intelligent Q&A
 
-- **Streamlit** - Web interface
-- **LangChain** - RAG pipeline & orchestration
-- **OpenAI** - GPT-4o-mini & embeddings
-- **yt-dlp** - Video metadata extraction
+## Requirements
 
-## 📁 Project Structure
-
-```
-videoQA/
-├── app.py              # Main Streamlit app
-├── utils.py            # YouTube processing & RAG functions
-├── langchain_*.py      # Tutorial files (LangChain, RAG, LangGraph)
-└── requirements.txt    # Dependencies
-```
-
-## ⚠️ Requirements
-
-- Python 3.9-3.11
+- Python 3.10-3.11
 - OpenAI API key
-- Videos with captions/transcripts enabled
-
-## 📚 Learning Resources
-
-Includes three comprehensive tutorials:
-- `langchain_tutorial.py` - LangChain fundamentals
-- `langchain_rag_tutorial.py` - RAG implementation guide
-- `langgraph_tutorial.py` - Advanced agent workflows
-
-## 🔧 Troubleshooting
-
-**Virtual environment conflicts:**
-```bash
-conda deactivate  # or: deactivate
-uv sync && uv run streamlit run app.py
-```
-
-**Streamlit not found:**
-```bash
-uv run streamlit run app.py  # Always use uv run
-```
-
-## 📝 License
-
-Open source - feel free to use and modify.
+- Videos with captions enabled
 
 ---
 
